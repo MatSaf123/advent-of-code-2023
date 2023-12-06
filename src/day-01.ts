@@ -77,7 +77,6 @@ async function buildNumbersFromTextDigitsAndWords(
         'g',
     );
 
-    console.log(reReverse);
     for await (const line of lineReader) {
         // We look for those from the beginning (index 0 of line)
         const matchesForward: string[] = (line.match(re) ?? []).map((match) =>
